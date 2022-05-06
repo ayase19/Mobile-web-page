@@ -1,0 +1,51 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+@total-with:750;
+
+.w{
+    width: 700/40rem;
+    margin: 0 auto;
+}
+
+html{
+    // 设置rem
+    font-size: (100vw/@total-with) * 40;
+    background-color: #eff0f4;
+}
+a{
+    text-decoration: none;
+}
+
+// 设置header
+.top-bar:extend(.w){
+    margin-top: 0.5rem;
+    // 设置弹性容器
+    display: flex;
+    height: 175/40rem;
+    // 设置对齐方式
+    justify-content: space-between;
+    // 设置辅轴对齐方式
+    align-items:center;
+
+    // 设置top-bar内的a标签
+    a{
+        color: #24253d;
+        font-size: 40px;
+
+        i{
+            font-size: 20px;
+            display: block;
+            color: #999999;
+        }
+    }
+}
+
+// 设置banner
+.banner:extend(.w){
+    img{
+        width: 100%;
+        border-radius:1.5rem;
+    }
+}
